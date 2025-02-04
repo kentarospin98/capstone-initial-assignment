@@ -6,10 +6,17 @@ To install dependencies:
 bun install
 ```
 
+Set the OpenAI API key in the .env file:
+
+```bash
+mv .env.template .env
+```
+
 To run:
 
 ```bash
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+The project expects the audio to be present as "audio.mp3" in the same directory.
+A sample mp3 file is provided.
