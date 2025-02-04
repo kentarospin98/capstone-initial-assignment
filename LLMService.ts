@@ -18,12 +18,14 @@ export class LLMService {
       ],
       temperature: 0,
     }
+
     const completion = await this.openai.chat.completions.create(params)
 
     let choice = completion.choices[0]
     let message = choice.message.content
     if (message === null) 
       throw new Error("Completion Failed")
+    
     return message
   }
 }

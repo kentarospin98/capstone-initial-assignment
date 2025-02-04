@@ -13,6 +13,7 @@ export class TranscriptionService {
             file: audioStream,
             model: "whisper-1",
           });
+          
         return transcription.text
     }
   }
